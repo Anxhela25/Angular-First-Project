@@ -1,0 +1,27 @@
+app-users,
+app-booking {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+app-users {
+  width: 342.79px;
+  height: 543.5px;
+}
+
+.centered-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-wrapper {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  margin-right: 50px;
+}

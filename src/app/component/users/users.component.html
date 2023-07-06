@@ -1,0 +1,61 @@
+<ng-container class="container">
+  <h2>Personal Data</h2>
+
+  <form method="post" [formGroup]="userForm" (ngSubmit)="createUser($event)">
+    <label for="firstName">First name:</label>
+    <br />
+    <input type="text" id="firstName" formControlName="firstName" />
+
+    <br />
+    <span
+      class="error-message"
+      *ngIf="
+        userForm.get('firstName')?.errors &&
+        userForm.get('firstName')?.invalid &&
+        userForm.get('firstName')?.touched
+      "
+    >
+      First name is required.
+    </span>
+    <br />
+    <label for="lastName">Last name:</label>
+    <br />
+
+    <input type="text" id="lastName" formControlName="lastName" />
+    <br />
+    <span
+      class="error-message"
+      *ngIf="
+        userForm.get('lastName')?.errors &&
+        userForm.get('lastName')?.invalid &&
+        userForm.get('lastName')?.touched
+      "
+    >
+      Last name is required.
+    </span>
+
+    <br />
+    <label for="phoneNumber">Phone number:</label>
+    <br />
+    <input type="number" id="phoneNumber" formControlName="phoneNumber" />
+    <br />
+    <span
+      class="error-message"
+      *ngIf="
+        userForm.get('phoneNumber')?.errors &&
+        userForm.get('phoneNumber')?.invalid &&
+        userForm.get('phoneNumber')?.touched
+      "
+    >
+      Phone number is required.
+    </span>
+    <br />
+    <button type="submit">Create User</button>
+  </form>
+  <br />
+  <ol>
+    <li *ngFor="let user of users">
+      {{ user.firstName }} {{ user.lastName }} {{ user.phoneNumber }}
+    </li>
+  </ol>
+</ng-container>

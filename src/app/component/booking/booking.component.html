@@ -1,0 +1,63 @@
+<h2>Appointment Booking</h2>
+
+<form
+  method="post"
+  [formGroup]="bookingForm"
+  (ngSubmit)="createBooking($event)"
+>
+  <label for="service">Service:</label>
+  <br />
+  <input type="text" id="service" formControlName="service" />
+  <br />
+  <span
+    class="error-message"
+    *ngIf="
+      bookingForm.get('service')?.invalid && bookingForm.get('service')?.touched
+    "
+  >
+    Service is required.
+  </span>
+  <br />
+  <label for="dateTime">DateTime:</label>
+  <br />
+  <input type="datetime-local" id="dateTime" formControlName="dateTime" />
+
+  <br />
+  <span
+    class="error-message"
+    *ngIf="
+      bookingForm.get('dateTime')?.invalid &&
+      bookingForm.get('dateTime')?.touched
+    "
+  >
+    Date and Time is required.
+  </span>
+  <br />
+  <br />
+  <label for="user">User:</label>
+
+  <button (click)="openUser()" class="userButton">+</button>
+  <div *ngIf="selectedUser">
+    <p>Selected User:</p>
+    <p>First Name: {{ selectedUser.firstName }}</p>
+    <p>Last Name: {{ selectedUser.lastName }}</p>
+    <p>Phone Number: {{ selectedUser.phoneNumber }}</p>
+  </div>
+  <br />
+  <br />
+
+  <button type="submit">Create Booking</button>
+</form>
+<br />
+<ol>
+  <li *ngFor="let bookingItem of booking" (dblclick)="onDelete(bookingItem)">
+    {{ bookingItem.service }} {{ bookingItem.dateTime }}
+    <br />
+    <b>User:</b>
+    {{ bookingItem.user ? bookingItem.user.firstName : "" }}
+    {{ bookingItem.user ? bookingItem.user.lastName : "" }}
+    <br />
+    <b>Phone Number:</b>
+    {{ bookingItem.user ? bookingItem.user.phoneNumber : "" }}
+  </li>
+</ol>
