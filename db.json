@@ -60,7 +60,7 @@
   "booking": [
     {
       "service": "Prerje",
-      "dateTime": "6/20/23, 7:15 PM",
+      "dateTime": "7/6/23, 7:15 PM",
       "user": {
         "firstName": "Lorela",
         "lastName": "Jano",
@@ -71,7 +71,7 @@
     },
     {
       "service": "Krehje",
-      "dateTime": "6/20/23, 8:00 PM",
+      "dateTime": "7/3/23, 8:00 PM",
       "user": {
         "firstName": "Xhenisa",
         "lastName": "Troka",
@@ -82,7 +82,7 @@
     },
     {
       "service": "Lyrje",
-      "dateTime": "6/22/23, 10:30 AM",
+      "dateTime": "6/30/23, 10:30 AM",
       "user": {
         "firstName": "Klea",
         "lastName": "Gega",
@@ -93,7 +93,7 @@
     },
     {
       "service": "Lyrje",
-      "dateTime": "6/25/23, 02:30 PM",
+      "dateTime": "6/30/23, 02:30 PM",
       "user": {
         "firstName": "Iris",
         "lastName": "Tomorri",
@@ -104,7 +104,7 @@
     },
     {
       "service": "Thonjte",
-      "dateTime": "6/25/23, 5:18 PM",
+      "dateTime": "7/8/23, 5:18 PM",
       "user": {
         "firstName": "Anxhela",
         "lastName": "Jano",
@@ -115,7 +115,7 @@
     },
     {
       "service": "Qethje ",
-      "dateTime": "6/15/23, 3:20 PM",
+      "dateTime": "6/27/23, 3:20 PM",
       "user": {
         "firstName": "Desada ",
         "lastName": "Serrjani",
@@ -126,7 +126,7 @@
     },
     {
       "service": "Prerje",
-      "dateTime": "6/23/23, 7:35 PM",
+      "dateTime": "6/25/23, 7:35 PM",
       "user": {
         "firstName": "Enxhi ",
         "lastName": "Rapaj",

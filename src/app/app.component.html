@@ -9,6 +9,7 @@
         Add user
       </button>
     </div>
+
     <app-users *ngIf="showUsersComponent"> </app-users>
 
     <div class="button-wrapper">
@@ -20,9 +21,10 @@
         Add booking
       </button>
     </div>
+
     <app-booking *ngIf="showComponent"></app-booking>
   </div>
+  <br />
+  <br />
+  <app-calendar></app-calendar>
 </div>
-<br />
-<br />
-<app-calendar></app-calendar>
